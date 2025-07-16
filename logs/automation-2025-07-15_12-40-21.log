@@ -1,0 +1,46 @@
+[2025-07-15 12:40:21] INFO  TC_001_AccountRegistration:28 - Launching Chrome Browser
+[2025-07-15 12:40:25] INFO  TC_001_AccountRegistration:41 - Maximized browser window
+[2025-07-15 12:40:26] INFO  TC_001_AccountRegistration:44 - Navigated to TutorialsNinja Home Page
+[2025-07-15 12:40:26] INFO  TC_001_AccountRegistration:15 - *******TC001_AccountRegistrationtest *******
+[2025-07-15 12:40:26] INFO  TC_001_AccountRegistration:21 - clicked on my account link
+[2025-07-15 12:40:27] INFO  TC_001_AccountRegistration:23 - clicked on register link
+[2025-07-15 12:40:27] DEBUG TC_001_AccountRegistration:67 - Generated password: OVODh823xy
+[2025-07-15 12:40:27] INFO  TC_001_AccountRegistration:28 - providing customer details
+[2025-07-15 12:40:27] DEBUG TC_001_AccountRegistration:55 - Generated random string: vyMvm
+[2025-07-15 12:40:27] DEBUG TC_001_AccountRegistration:55 - Generated random string: fzjne
+[2025-07-15 12:40:27] DEBUG TC_001_AccountRegistration:55 - Generated random string: IHUCX
+[2025-07-15 12:40:27] DEBUG TC_001_AccountRegistration:61 - Generated phone number: 1413400192
+[2025-07-15 12:40:28] INFO  TC_001_AccountRegistration:39 - validating expected message
+[2025-07-15 12:40:39] ERROR TC_001_AccountRegistration:44 - test failed
+[2025-07-15 12:40:39] DEBUG TC_001_AccountRegistration:45 - debug logs
+[2025-07-15 12:40:39] INFO  TC_001_AccountRegistration:49 - Closing browser
+[2025-07-15 12:40:40] INFO  TC_001_AccountRegistration:28 - Launching Chrome Browser
+[2025-07-15 12:41:14] INFO  TC_001_AccountRegistration:41 - Maximized browser window
+[2025-07-15 12:41:17] INFO  TC_001_AccountRegistration:44 - Navigated to TutorialsNinja Home Page
+[2025-07-15 12:41:17] INFO  TC_001_AccountRegistration:15 - *******TC001_AccountRegistrationtest *******
+[2025-07-15 12:41:17] INFO  TC_001_AccountRegistration:21 - clicked on my account link
+[2025-07-15 12:41:18] INFO  TC_001_AccountRegistration:23 - clicked on register link
+[2025-07-15 12:41:18] DEBUG TC_001_AccountRegistration:67 - Generated password: JokriBKKPp
+[2025-07-15 12:41:18] INFO  TC_001_AccountRegistration:28 - providing customer details
+[2025-07-15 12:41:18] DEBUG TC_001_AccountRegistration:55 - Generated random string: luYDZ
+[2025-07-15 12:41:19] DEBUG TC_001_AccountRegistration:55 - Generated random string: WabNC
+[2025-07-15 12:41:20] DEBUG TC_001_AccountRegistration:55 - Generated random string: SdVKL
+[2025-07-15 12:41:21] DEBUG TC_001_AccountRegistration:61 - Generated phone number: 8465832091
+[2025-07-15 12:41:23] INFO  TC_001_AccountRegistration:39 - validating expected message
+[2025-07-15 12:41:24] INFO  TC_001_AccountRegistration:54 - ******* Finished TC001_AccountRegistrationTest *******
+[2025-07-15 12:41:24] INFO  TC_001_AccountRegistration:49 - Closing browser
+[2025-07-15 12:41:30] INFO  TC_001_AccountRegistration:28 - Launching Chrome Browser
+[2025-07-15 12:41:46] INFO  TC_001_AccountRegistration:41 - Maximized browser window
+[2025-07-15 12:41:48] INFO  TC_001_AccountRegistration:44 - Navigated to TutorialsNinja Home Page
+[2025-07-15 12:41:48] INFO  TC_001_AccountRegistration:15 - *******TC001_AccountRegistrationtest *******
+[2025-07-15 12:41:49] INFO  TC_001_AccountRegistration:21 - clicked on my account link
+[2025-07-15 12:41:50] INFO  TC_001_AccountRegistration:23 - clicked on register link
+[2025-07-15 12:41:50] DEBUG TC_001_AccountRegistration:67 - Generated password: GPcWAJ8H03
+[2025-07-15 12:41:50] INFO  TC_001_AccountRegistration:28 - providing customer details
+[2025-07-15 12:41:50] DEBUG TC_001_AccountRegistration:55 - Generated random string: KSSik
+[2025-07-15 12:41:51] DEBUG TC_001_AccountRegistration:55 - Generated random string: PAsdJ
+[2025-07-15 12:41:52] DEBUG TC_001_AccountRegistration:55 - Generated random string: NgEWK
+[2025-07-15 12:41:53] DEBUG TC_001_AccountRegistration:61 - Generated phone number: 7800187033
+[2025-07-15 12:41:56] INFO  TC_001_AccountRegistration:39 - validating expected message
+[2025-07-15 12:41:56] INFO  TC_001_AccountRegistration:54 - ******* Finished TC001_AccountRegistrationTest *******
+[2025-07-15 12:41:56] INFO  TC_001_AccountRegistration:49 - Closing browser

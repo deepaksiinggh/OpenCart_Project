@@ -1,0 +1,15 @@
+[2025-07-15 12:33:46] INFO  TC_001_AccountRegistration:28 - Launching Chrome Browser
+[2025-07-15 12:33:50] INFO  TC_001_AccountRegistration:41 - Maximized browser window
+[2025-07-15 12:33:51] INFO  TC_001_AccountRegistration:44 - Navigated to TutorialsNinja Home Page
+[2025-07-15 12:33:51] INFO  TC_001_AccountRegistration:15 - *******TC001_AccountRegistrationtest *******
+[2025-07-15 12:33:51] INFO  TC_001_AccountRegistration:21 - clicked on my account link
+[2025-07-15 12:33:52] INFO  TC_001_AccountRegistration:23 - clicked on register link
+[2025-07-15 12:33:52] DEBUG TC_001_AccountRegistration:67 - Generated password: uxMTfUIzAl
+[2025-07-15 12:33:52] INFO  TC_001_AccountRegistration:28 - providing customer details
+[2025-07-15 12:33:52] DEBUG TC_001_AccountRegistration:55 - Generated random string: YbbwA
+[2025-07-15 12:33:52] DEBUG TC_001_AccountRegistration:55 - Generated random string: lwuKd
+[2025-07-15 12:33:52] DEBUG TC_001_AccountRegistration:55 - Generated random string: wTSrd
+[2025-07-15 12:33:52] DEBUG TC_001_AccountRegistration:61 - Generated phone number: 2192899621
+[2025-07-15 12:33:53] INFO  TC_001_AccountRegistration:39 - validating expected message
+[2025-07-15 12:33:53] INFO  TC_001_AccountRegistration:54 - ******* Finished TC001_AccountRegistrationTest *******
+[2025-07-15 12:33:53] INFO  TC_001_AccountRegistration:49 - Closing browser

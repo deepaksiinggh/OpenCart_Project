@@ -1,45 +1,77 @@
 package testBase;
 
+
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
+import utilites.ConfigrationReader;
 
 public class BaseClass {
 
-	public static WebDriver driver;
-	
-	@BeforeClass
-	public void setUp() {
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		driver.get("https://tutorialsninja.com/demo/index.php?route=common/home");
-	}
-	
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
-	}
-	
-	public String generateString() {
-		String randomString = RandomStringUtils.randomAlphabetic(5);
-		return randomString;
-	}
-	
-	public String generateNumber() {
-		String phoneNumber = RandomStringUtils.randomNumeric(10);
-		return phoneNumber;
-	}
-	
-	public String generatePwd() {
-		String pwd = RandomStringUtils.randomAlphanumeric(10);
-		return pwd;
-	}
+    public WebDriver driver;
+    public Logger logger;
+    public Properties p;
+
+    @BeforeClass
+    @Parameters({"os","browser"})
+    public void setUp(String os,String browser) throws IOException {
+    	
+    	//logger
+    	
+    	logger = LogManager.getLogger(this.getClass()); 
+    	 logger.info("Browser");
+    	 
+    	 // browser
+    	 
+    	switch(browser.toLowerCase()) {
+    	case "chrome":driver =new ChromeDriver();break;
+    	case "safari":driver=new SafariDriver();break;
+    	case "firefox":driver =new FirefoxDriver();break;
+    	case "edge":driver=new EdgeDriver();break;
+    	default: System.out.println("Invalid browser name..."); return;
+    	}
+        driver.manage().window().maximize();
+        logger.info("Maximized browser window");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.get(ConfigrationReader.readDataFromConfig("url"));
+        logger.info("Navigated to TutorialsNinja Home Page");
+    }
+
+    @AfterClass
+    public void tearDown() {
+        logger.info("Closing browser");
+        driver.quit();
+    }
+
+    public String generateString() {
+        String randomString = RandomStringUtils.randomAlphabetic(5);
+        logger.debug("Generated random string: " + randomString);
+        return randomString;
+    }
+
+    public String generateNumber() {
+        String phoneNumber = RandomStringUtils.randomNumeric(10);
+        logger.debug("Generated phone number: " + phoneNumber);
+        return phoneNumber;
+    }
+
+    public String generatePwd() {
+        String pwd = RandomStringUtils.randomAlphanumeric(10);
+        logger.debug("Generated password: " + pwd);
+        return pwd;
+    }
 }
