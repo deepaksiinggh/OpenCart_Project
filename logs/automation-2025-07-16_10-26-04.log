@@ -1,0 +1,5 @@
+[2025-07-16 10:26:05] INFO  TC_002_Login:35 - Browser
+[2025-07-16 10:26:07] INFO  TC_002_Login:47 - Maximized browser window
+[2025-07-16 10:26:08] INFO  TC_002_Login:50 - Navigated to TutorialsNinja Home Page
+[2025-07-16 10:26:08] INFO  TC_002_Login:17 - ********* Starting TC_002_Login **********
+[2025-07-16 10:26:23] INFO  TC_002_Login:55 - Closing browser

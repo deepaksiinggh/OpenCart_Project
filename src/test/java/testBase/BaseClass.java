@@ -1,14 +1,14 @@
 package testBase;
-
-
+import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Properties;
-
+import java.util.Date;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -17,16 +17,15 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-
 import utilites.ConfigrationReader;
+
 
 public class BaseClass {
 
-    public WebDriver driver;
+    public static WebDriver driver;
     public Logger logger;
-    public Properties p;
 
-    @BeforeClass
+    @BeforeClass(groups = {"Sanity","Regression","Master","DataDriven"})
     @Parameters({"os","browser"})
     public void setUp(String os,String browser) throws IOException {
     	
@@ -51,7 +50,7 @@ public class BaseClass {
         logger.info("Navigated to TutorialsNinja Home Page");
     }
 
-    @AfterClass
+    @AfterClass(groups = {"Sanity","Regression","Master","DataDriven"})
     public void tearDown() {
         logger.info("Closing browser");
         driver.quit();
@@ -74,4 +73,20 @@ public class BaseClass {
         logger.debug("Generated password: " + pwd);
         return pwd;
     }
+
+    public String captureScreen(String tName) {
+	String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+	
+	TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+	File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+	
+	String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\" + tName + "_" + timeStamp + ".png";
+	File targetFile=new File(targetFilePath);
+	
+	sourceFile.renameTo(targetFile);
+		
+	return targetFilePath; 
+
+}
+
 }

@@ -12,5 +12,6 @@ public class ConfigrationReader {
 		prop.load(fs);
 		String data = prop.getProperty(key);
 		return data;
+		
 	}
 }
