@@ -1,0 +1,20 @@
+[2025-07-17 14:01:51] INFO  TC_001_AccountRegistration:35 - Browser
+[2025-07-17 14:01:53] INFO  TC_001_AccountRegistration:47 - Maximized browser window
+[2025-07-17 14:01:55] INFO  TC_001_AccountRegistration:50 - Navigated to TutorialsNinja Home Page
+[2025-07-17 14:01:55] INFO  TC_001_AccountRegistration:15 - *******TC001_AccountRegistrationtest *******
+[2025-07-17 14:01:55] INFO  TC_001_AccountRegistration:21 - clicked on my account link
+[2025-07-17 14:01:56] INFO  TC_001_AccountRegistration:23 - clicked on register link
+[2025-07-17 14:01:56] DEBUG TC_001_AccountRegistration:73 - Generated password: oeWSXcaDrA
+[2025-07-17 14:01:56] INFO  TC_001_AccountRegistration:28 - providing customer details
+[2025-07-17 14:01:56] DEBUG TC_001_AccountRegistration:61 - Generated random string: hKYkd
+[2025-07-17 14:01:56] DEBUG TC_001_AccountRegistration:61 - Generated random string: udowu
+[2025-07-17 14:01:56] DEBUG TC_001_AccountRegistration:61 - Generated random string: btrHN
+[2025-07-17 14:01:56] DEBUG TC_001_AccountRegistration:67 - Generated phone number: 6606467542
+[2025-07-17 14:01:57] INFO  TC_001_AccountRegistration:39 - validating expected message
+[2025-07-17 14:01:58] INFO  TC_001_AccountRegistration:54 - ******* Finished TC001_AccountRegistrationTest *******
+[2025-07-17 14:01:58] INFO  TC_001_AccountRegistration:55 - Closing browser
+[2025-07-17 14:01:58] INFO  TC_002_Login:35 - Browser
+[2025-07-17 14:02:00] INFO  TC_002_Login:47 - Maximized browser window
+[2025-07-17 14:02:02] INFO  TC_002_Login:50 - Navigated to TutorialsNinja Home Page
+[2025-07-17 14:02:02] INFO  TC_002_Login:17 - ********* Starting TC_002_Login **********
+[2025-07-17 14:02:18] INFO  TC_002_Login:55 - Closing browser
